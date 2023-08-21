@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	var conferenceName = "Go Conference"
-	const confereceTickets = 50
+	const conferenceTickets = 50
 	var remainingTickets uint = 50
 	var firstName string
 	var lastName string
@@ -13,7 +13,7 @@ func main() {
 
 	//formated string with place holders ( variable reference)
 	fmt.Printf("Welcome to our %v booking applications \n", conferenceName)
-	fmt.Println("We have total of", confereceTickets, "tickets and", remainingTickets, "are still available")
+	fmt.Println("We have total of", conferenceTickets, "tickets and", remainingTickets, "are still available")
 
 	var bookings []string
 
