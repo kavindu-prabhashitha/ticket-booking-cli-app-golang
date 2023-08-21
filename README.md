@@ -13,7 +13,7 @@
 - A loop statement allows us to execute code multiple times, in a loop
 - loops are simplified in Go, we only have the "for loop" for loops
 
- - #### For-Each" loop ####
+- - #### For-Each" loop ####
   - iterating over a list
 
 ### range ###
