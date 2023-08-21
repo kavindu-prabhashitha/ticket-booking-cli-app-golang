@@ -22,16 +22,16 @@ func main() {
 
 	for {
 		fmt.Println("Enter your first name :")
-		fmt.Scan(&firstName)
+		fmt.Scanln(&firstName)
 
 		fmt.Println("Enter your last name :")
-		fmt.Scan(&lastName)
+		fmt.Scanln(&lastName)
 
 		fmt.Println("Enter your email :")
-		fmt.Scan(&email)
+		fmt.Scanln(&email)
 
 		fmt.Println("Enter no.of tickets :")
-		fmt.Scan(&userTickets)
+		fmt.Scanln(&userTickets)
 
 		if userTickets <= remainingTickets {
 			remainingTickets = remainingTickets - uint(userTickets)
