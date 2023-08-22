@@ -12,6 +12,7 @@
 - In general, languages provide various control structures to control the application flow
 - A loop statement allows us to execute code multiple times, in a loop
 - loops are simplified in Go, we only have the "for loop" for loops
+
  - #### For-Each" loop ####
   - iterating over a list
 
@@ -32,3 +33,4 @@
 - You can call a function as many times you want
 - So a function is also used to reduce code duplication
 - A Go function can return multiple values
+
