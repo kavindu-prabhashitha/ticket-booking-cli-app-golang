@@ -1,3 +1,7 @@
+### Best Practice ###
+- Define variable as "local" as possible
+- Create the variable where you need it
+
 ### Slice ###
 - slice is an abstraction of an Array
 - slices are more flexible and powerful: variable-length or get an sub arrya of its own
@@ -34,3 +38,16 @@
 - So a function is also used to reduce code duplication
 - A Go function can return multiple values
 
+### Package Level Variable ###
+- Defined at the top outside all functions
+- They can be accessed inside any of the functions
+- And in all files, which are in the same package
+
+
+### Local Variables ###
+- Defined inside a function or a block
+- They can be accessed only inside that function or block of code
+
+### Packages in Go ###
+- Go programs are organized into packages
+- A package is a collection of Go files
