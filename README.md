@@ -51,3 +51,8 @@
 ### Packages in Go ###
 - Go programs are organized into packages
 - A package is a collection of Go files
+
+### Maps ###
+- Maps unique keys to values
+- All keys have the same data type
+- All values have the same data type

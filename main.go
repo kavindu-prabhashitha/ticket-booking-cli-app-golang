@@ -89,6 +89,7 @@ func getUserInput() (string, string, string, uint) {
 
 func bookTicket(userTickets uint, bookings []string, firstName string, lastName string, email string, conferenceName string) {
 	remainingTickets = remainingTickets - uint(userTickets)
+
 	bookings = append(bookings, firstName+" "+lastName)
 
 	fmt.Printf("Thank you %v %v for buying %v tickets. You will receive a confirmation email at %v \n", firstName, lastName, userTickets, email)
