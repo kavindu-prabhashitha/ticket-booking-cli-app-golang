@@ -2,10 +2,23 @@
 - Define variable as "local" as possible
 - Create the variable where you need it
 
+### Why Go ###
+- Concurrency in Go is cheap and easy
+  - "go ..." - starts a new goroutine
+  - A goroutine is a lightweight thread managed by the Go runtime
+  ### Goroutine ###
+   - Go is using , what's called a "Green thread "
+   - Abstraction of an actual thread
+   - Managed by the go runtime, we are only interacting with these high level goroutine
+   - Cheaper and lightweight
+   - can run hundreds of thousands or millions goroutines without affecting the performance
+   - goroutines has "Channels" which is a built-in feature for go routines to talk with one another
+
 ### Slice ###
 - slice is an abstraction of an Array
 - slices are more flexible and powerful: variable-length or get an sub arrya of its own
 - slices are also index based and have a size, but is resized when needed
+- can have only one data type
 
 
 ### append ###
@@ -54,5 +67,26 @@
 
 ### Maps ###
 - Maps unique keys to values
+- We cannot mix data types
 - All keys have the same data type
 - All values have the same data type
+- syntax  ---> map[key-data-type][value-data-type]
+
+
+### Struct ###
+- Stands for " Structure" 
+- Can hold mixed data types 
+
+  #### "type" statement - Custom Types ####
+  - The type keyword creates a new type, with the name you specify
+  - In fact, we could also create a type based on every other data type like int, string etc.
+
+### "time" - functionality for time ###
+- The sleep function stops or blocks the current "thread" (goroutine) execution for the defined duration
+
+### Waitgroup ###
+- Waits for the launched goroutine to finish
+- Package "sync" provides basic synchronization functionality
+- Add : sets the number of goroutines to wait for 
+- Wait : Block until the WaitGroup counter is 0
+- Done : Decrements the WaitGroup counter by 1 , So this is called by the goroutine to indicate that it's finished
