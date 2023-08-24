@@ -20,7 +20,6 @@
 - slices are also index based and have a size, but is resized when needed
 - can have only one data type
 
-
 ### append ###
 - Adds the element(s) at the end of the slice
 - Grows the slice if a greater capacity is needed and return the updated slicer value
